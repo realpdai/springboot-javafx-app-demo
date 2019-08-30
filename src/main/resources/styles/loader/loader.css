@@ -1,0 +1,20 @@
+
+.foreground {
+    -fx-background-color : transparent;
+}
+
+.jfx-progress-bar:determinate .bar
+{
+    -fx-background-color : white;
+}
+
+.jfx-progress-bar:determinate .track {
+  -fx-background-color : transparent;
+}
+
+
+.block
+{
+    -fx-background-color: linear-gradient(to top,   derive(#006CC6, 50%) , derive(#003362, 50%)) ;
+    -fx-shape : "M 50 100 L 50 500 L 400 500 L 250 100 L 50 100 ";
+}

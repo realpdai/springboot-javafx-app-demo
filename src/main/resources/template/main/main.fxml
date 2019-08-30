@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXBadge?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="root" prefHeight="653.0" prefWidth="1106.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pdai.javafx.app.controller.MainController">
+   <children>
+      <HBox fx:id="main" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <VBox fx:id="drawer" alignment="TOP_CENTER" prefHeight="651.0" prefWidth="250.0" stylesheets="@/styles/theme/drawer.css">
+               <ScrollPane fx:id="scroll" fitToWidth="true" styleClass="scroll" stylesheets="@/styles/theme/custom-scroll.css">
+                  <content>
+                     <VBox fx:id="views" styleClass="drawer-content">
+                        <children>
+                           <Button fx:id="home" alignment="BASELINE_LEFT" graphicTextGap="20.0" mnemonicParsing="false" onMouseClicked="#dashboard" prefHeight="50.0" prefWidth="271.0" styleClass="drawer-item" text="Dashboard">
+                              <graphic>
+                                 <SVGPath content="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z" mouseTransparent="true" styleClass="icon" />
+                              </graphic>
+                           </Button>
+                           <Button fx:id="home2" alignment="BASELINE_LEFT" graphicTextGap="20.0" mnemonicParsing="false" onMouseClicked="#jfxTextField" prefHeight="50.0" prefWidth="271.0" styleClass="drawer-item" text="JFoenix Textfield">
+                              <graphic>
+                                 <SVGPath content="M11.99 18.54l-7.37-5.73L3 14.07l9 7 9-7-1.63-1.27-7.38 5.74zM12 16l7.36-5.73L21 9l-9-7-9 7 1.63 1.27L12 16zM11.99 18.54l-7.37-5.73L3 14.07l9 7 9-7-1.63-1.27-7.38 5.74zM12 16l7.36-5.73L21 9l-9-7-9 7 1.63 1.27L12 16z" styleClass="icon" />
+                              </graphic>
+                           </Button>
+                           <Button fx:id="about" alignment="BASELINE_LEFT" graphicTextGap="20.0" prefHeight="50.0" prefWidth="596.0" styleClass="drawer-item" text="About" onMouseClicked="#about">
+                              <graphic>
+                                 <SVGPath content="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z" styleClass="icon" />
+                              </graphic>
+                           </Button>
+                           <Button alignment="BASELINE_LEFT" graphicTextGap="20.0" prefHeight="50.0" prefWidth="596.0" styleClass="drawer-item" text="WebView - Baidu" onMouseClicked="#webview">
+                              <graphic>
+                                 <SVGPath content="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z" styleClass="icon" />
+                              </graphic>
+                           </Button>
+                           <Button alignment="BASELINE_LEFT" graphicTextGap="20.0" prefHeight="50.0" prefWidth="596.0" styleClass="drawer-item" text="WebView - Bing" onMouseClicked="#webview2">
+                              <graphic>
+                                 <SVGPath content="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z" styleClass="icon" />
+                              </graphic>
+                           </Button>
+                        </children>
+                     </VBox>
+                  </content>
+                  <VBox.margin>
+                     <Insets top="10.0" />
+                  </VBox.margin>
+               </ScrollPane>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+               <styleClass>
+                  <String fx:value="border" />
+                  <String fx:value="border-r-1" />
+                  <String fx:value="drawer" />
+               </styleClass>
+            </VBox>
+            <VBox fx:id="content" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" styleClass="drawer" HBox.hgrow="ALWAYS">
+               <children>
+                  <VBox>
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="40.0" prefWidth="904.0" style="-fx-border-width: 0 0 1 0;" styleClass="border">
+                           <children>
+                              <Button fx:id="hamburger" contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onMouseClicked="#altLayout" prefWidth="40.0" styleClass="hamburger" text="Button">
+                                 <graphic>
+                                    <SVGPath content="M2 15.5v2h20v-2H2zm0-5v2h20v-2H2zm0-5v2h20v-2H2z" styleClass="icon" />
+                                 </graphic>
+                              </Button>
+                              <Label fx:id="title" styleClass="h4" text="Dashboard" textFill="#0000008c">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                              <HBox alignment="CENTER_RIGHT" prefHeight="40.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <JFXBadge fx:id="bg_info" layoutX="732.0" layoutY="12.0" position="TOP_RIGHT" prefHeight="44.0" prefWidth="35.0" text="32" visible="false">
+                                       <styleClass>
+                                          <String fx:value="icon" />
+                                          <String fx:value="icon-danger" />
+                                       </styleClass>
+                                       <control>
+                                          <StackPane prefHeight="32.0" prefWidth="43.0" style="-fx-padding: 10;" styleClass="icon-notification">
+                                             <children>
+                                                <FontAwesomeIconView glyphName="FLAG" size="20" styleClass="icon" StackPane.alignment="CENTER" />
+                                             </children>
+                                          </StackPane>
+                                       </control>
+                                    </JFXBadge>
+                                    <JFXBadge fx:id="notifications" onMouseClicked="#openNotification" position="TOP_RIGHT" prefHeight="44.0" prefWidth="35.0" text="41">
+                                       <styleClass>
+                                          <String fx:value="icon" />
+                                          <String fx:value="icon-warning" />
+                                       </styleClass>
+                                       <control>
+                                          <StackPane prefHeight="32.0" prefWidth="43.0" style="-fx-padding: 10;">
+                                             <children>
+                                                <FontAwesomeIconView glyphName="BELL" size="20" styleClass="icon" StackPane.alignment="CENTER" />
+                                             </children>
+                                          </StackPane>
+                                       </control>
+                                    </JFXBadge>
+                                    <JFXBadge fx:id="messages" layoutX="759.0" layoutY="12.0" onMouseClicked="#openMessages" position="TOP_RIGHT" prefHeight="44.0" prefWidth="35.0" styleClass="icon" text="12">
+                                       <control>
+                                          <StackPane prefHeight="32.0" prefWidth="43.0" style="-fx-padding: 10;">
+                                             <children>
+                                                <FontAwesomeIconView glyphName="ENVELOPE" size="20" styleClass="icon" />
+                                             </children>
+                                          </StackPane>
+                                       </control>
+                                    </JFXBadge>
+                                    <JFXButton fx:id="config" contentDisplay="GRAPHIC_ONLY" onMouseClicked="#openConfig" prefHeight="83.0" prefWidth="40.0" ripplerFill="BLACK">
+                                       <graphic>
+                                          <SVGPath content="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" fill="#00000080" styleClass="icon" />
+                                       </graphic>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                       <styleClass>
+                                          <String fx:value="btn-transparent" />
+                                          <String fx:value="round" />
+                                       </styleClass>
+                                       <contextMenu>
+                                          <ContextMenu>
+                                            <items>
+                                              <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+                                            </items>
+                                          </ContextMenu>
+                                       </contextMenu>
+                                    </JFXButton>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets top="2.0" />
+                                 </HBox.margin>
+                              </HBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <ScrollPane fx:id="body" fitToHeight="true" fitToWidth="true" prefHeight="200.0" prefWidth="200.0" StackPane.alignment="TOP_LEFT">
+                           <content>
+                              <fx:include source="../module/profile.fxml" />
+                           </content></ScrollPane>
+                     </children>
+                  </StackPane>
+               </children>
+            </VBox>
+         </children>
+         <styleClass>
+            <String fx:value="border-top-1" />
+            <String fx:value="border" />
+         </styleClass>
+      </HBox>
+   </children>
+    <stylesheets>
+        <URL value="@/styles/theme/material-color.css" />
+        <URL value="@/styles/theme/skeleton.css" />
+        <URL value="@/styles/theme/light.css" />
+        <URL value="@/styles/theme/bootstrap.css" />
+        <URL value="@/styles/theme/shape.css" />
+        <URL value="@/styles/theme/typographic.css" />
+        <URL value="@/styles/theme/helpers.css" />
+        <URL value="@/styles/theme/master.css" />
+    </stylesheets>
+</StackPane>

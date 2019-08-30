@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="714.0" prefWidth="1211.0" style="-fx-background-color: blue;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <TabPane prefHeight="389.0" prefWidth="852.0" style="-fx-background-color: blue;" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+        <tabs>
+          <Tab text="User List">
+               <content>
+                  <TreeTableView prefHeight="200.0" prefWidth="200.0">
+                    <columns>
+                      <TreeTableColumn prefWidth="75.0" text="C1" />
+                      <TreeTableColumn prefWidth="75.0" text="C2" />
+                        <TreeTableColumn prefWidth="75.0" text="C3" />
+                        <TreeTableColumn prefWidth="75.0" text="C2" />
+                        <TreeTableColumn prefWidth="75.0" text="C2" />
+                        <TreeTableColumn prefWidth="75.0" text="C2" />
+                        <TreeTableColumn prefWidth="75.0" text="C2" />
+                        <TreeTableColumn prefWidth="75.0" text="C2" />
+                        <TreeTableColumn prefWidth="75.0" text="C2" />
+                        <TreeTableColumn prefWidth="75.0" text="C2" />
+                    </columns>
+                  </TreeTableView>
+               </content>
+            </Tab>
+          <Tab text="Role List">
+               <content>
+                  <TableView prefHeight="200.0" prefWidth="200.0">
+                    <columns>
+                      <TableColumn prefWidth="75.0" text="C1" />
+                      <TableColumn prefWidth="75.0" text="C2" />
+                    </columns>
+                  </TableView>
+               </content>
+            </Tab>
+        </tabs>
+         <BorderPane.margin>
+            <Insets bottom="20.0" right="20.0" top="20.0" />
+         </BorderPane.margin>
+      </TabPane>
+   </center>
+   <left>
+      <GridPane prefHeight="643.0" prefWidth="359.0" style="-fx-background-color: blue;" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="20.0" top="10.0" />
+               </GridPane.margin>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;">
+               <children>
+                  <Hyperlink layoutX="87.0" layoutY="63.0" text="More&gt;&gt;" />
+                  <ImageView fitHeight="49.0" fitWidth="51.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../spring-javafx-examples-master/part_1/target/classes/icon.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="75.0" layoutY="19.0" prefHeight="40.0" prefWidth="72.0" text="Help Doc" />
+               </children>
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="20.0" right="10.0" top="10.0" />
+               </GridPane.margin>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="1">
+               <children>
+                  <Label layoutX="32.0" layoutY="14.0" prefHeight="40.0" prefWidth="72.0" text="Help Doc" />
+                  <Hyperlink layoutX="68.0" layoutY="54.0" text="&gt;&gt;" />
+               </children>
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="20.0" top="10.0" />
+               </GridPane.margin>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.rowIndex="1">
+               <children>
+                  <Hyperlink layoutX="68.0" layoutY="54.0" text="&gt;&gt;" />
+               </children>
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="20.0" right="10.0" top="10.0" />
+               </GridPane.margin>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.rowIndex="2">
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" prefHeight="40.0" prefWidth="72.0" text="Help Doc" />
+                  <Hyperlink layoutX="68.0" layoutY="54.0" text="&gt;&gt;" />
+               </children>
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="20.0" right="10.0" top="10.0" />
+               </GridPane.margin>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="20.0" top="10.0" />
+               </GridPane.margin>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="20.0" right="10.0" top="10.0" />
+               </GridPane.margin>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="20.0" top="10.0" />
+               </GridPane.margin>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="20.0" right="10.0" top="10.0" />
+               </GridPane.margin>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="20.0" top="10.0" />
+               </GridPane.margin>
+            </AnchorPane>
+         </children>
+         <padding>
+            <Insets bottom="10.0" top="10.0" />
+         </padding>
+      </GridPane>
+   </left>
+   <top>
+      <GridPane alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="1090.0" BorderPane.alignment="CENTER_RIGHT">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="448.0" minWidth="10.0" prefWidth="346.0" />
+            <ColumnConstraints fillWidth="false" hgrow="SOMETIMES" maxWidth="664.0" minWidth="10.0" prefWidth="477.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="812.0" minWidth="10.0" prefWidth="350.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="97.0" text="被动监听1">
+                     <styleClass>
+                        <String fx:value="action-btn" />
+                        <String fx:value="success" />
+                     </styleClass>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Button>
+                <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="97.0" text="主动扫描2">
+                     <styleClass>
+                        <String fx:value="action-btn" />
+                        <String fx:value="danger" />
+                     </styleClass>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="31.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../spring-javafx-examples-master/part_1/target/classes/icon.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="28.0" prefWidth="186.0" text="网络扫描工具 V2.4.3" textFill="#ffe500" textOverrun="WORD_ELLIPSIS">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+         <BorderPane.margin>
+            <Insets left="20.0" right="20.0" top="20.0" />
+         </BorderPane.margin>
+      </GridPane>
+   </top>
+</BorderPane>

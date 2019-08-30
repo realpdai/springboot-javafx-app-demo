@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity"
+	minHeight="-Infinity" minWidth="-Infinity" prefHeight="477.0"
+	prefWidth="280.0" xmlns="http://javafx.com/javafx/8"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="com.pdai.javafx.demo.controller.ToolController">
+	<children>
+		<Label layoutX="36.0" layoutY="55.0" prefHeight="105.0"
+			prefWidth="225.0" text="This is some ToolWindow" />
+		<Button layoutX="36.0" layoutY="147.0" mnemonicParsing="false"
+			onAction="#doSomething" text="DoSomething" />
+		<AreaChart layoutX="26.0" layoutY="218.0" prefHeight="204.0"
+			prefWidth="211.0">
+			<xAxis>
+				<CategoryAxis side="BOTTOM" />
+			</xAxis>
+			<yAxis>
+				<NumberAxis side="LEFT" />
+			</yAxis>
+		</AreaChart>
+	</children>
+</Pane>

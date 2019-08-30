@@ -1,0 +1,744 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.web.HTMLEditor?>
+<?import java.lang.*?>
+<ScrollPane prefHeight="3000.0" prefViewportHeight="600.0" prefViewportWidth="800.0" prefWidth="1000.0"
+            style="-fx-background-color: white;" stylesheets="@bootstrap3.css" xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml/1">
+    <contextMenu>
+        <ContextMenu>
+            <items>
+                <MenuItem mnemonicParsing="false" text="Unspecified Action"/>
+                <CheckMenuItem mnemonicParsing="false" text="check mi"/>
+                <RadioMenuItem mnemonicParsing="false" text="radio mi"/>
+                <SeparatorMenuItem mnemonicParsing="false"/>
+                <Menu mnemonicParsing="false" text="Unspecified Menu">
+                    <MenuItem mnemonicParsing="false" text="Action 1"/>
+                </Menu>
+            </items>
+        </ContextMenu>
+    </contextMenu>
+    <VBox layoutX="250.0" layoutY="-38.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+          AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+        </padding>
+        <HBox prefHeight="39.0" spacing="5.0">
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+            </padding>
+            <Button mnemonicParsing="false" styleClass="default" text="default"/>
+            <Button mnemonicParsing="false" style="-fx-background-insets: 0,0,-1,0;" styleClass="primary"
+                    text=".primary"/>
+            <Button mnemonicParsing="false" text=".success">
+                <styleClass>
+                    <String fx:value="success"/>
+                    <String fx:value="btn"/>
+                </styleClass>
+            </Button>
+            <Button mnemonicParsing="false" text=".info">
+                <styleClass>
+                    <String fx:value="info"/>
+                    <String fx:value="action-btn"/>
+                </styleClass>
+            </Button>
+            <Button mnemonicParsing="false" text=".warning">
+                <styleClass>
+                    <String fx:value="warning"/>
+                    <String fx:value="action-btn"/>
+                </styleClass>
+            </Button>
+            <Button mnemonicParsing="false" text=".danger">
+                <styleClass>
+                    <String fx:value="danger"/>
+                    <String fx:value="action-btn"/>
+                </styleClass>
+            </Button>
+        </HBox>
+        <HBox prefHeight="39.0">
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+            </padding>
+            <ToggleButton mnemonicParsing="false" selected="true" styleClass="first" text=".first">
+                <HBox.margin>
+                    <Insets right="-1.0"/>
+                </HBox.margin>
+            </ToggleButton>
+            <Button mnemonicParsing="false" text=".primary.middle">
+                <styleClass>
+                    <String fx:value="primary"/>
+                    <String fx:value="middle"/>
+                </styleClass>
+            </Button>
+            <Button mnemonicParsing="false" text=".success.middle">
+                <styleClass>
+                    <String fx:value="success"/>
+                    <String fx:value="middle"/>
+                </styleClass>
+            </Button>
+            <Button mnemonicParsing="false" text=".info.last">
+                <styleClass>
+                    <String fx:value="info"/>
+                    <String fx:value="last"/>
+                </styleClass>
+            </Button>
+            <Button mnemonicParsing="false" text=".warning.first">
+                <styleClass>
+                    <String fx:value="warning"/>
+                    <String fx:value="first"/>
+                </styleClass>
+                <HBox.margin>
+                    <Insets left="10.0"/>
+                </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" text=".danger.last">
+                <styleClass>
+                    <String fx:value="danger"/>
+                    <String fx:value="last"/>
+                </styleClass>
+            </Button>
+        </HBox>
+        <HBox spacing="5.0">
+            <VBox alignment="TOP_CENTER">
+                <padding>
+                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                </padding>
+                <Label text="vbox"/>
+                <ToggleButton mnemonicParsing="false" text=".first">
+                    <styleClass>
+                        <String fx:value="first"/>
+                        <String fx:value="action-btn"/>
+                    </styleClass>
+                    <VBox.margin>
+                        <Insets bottom="-1.0"/>
+                    </VBox.margin>
+                </ToggleButton>
+                <ToggleButton mnemonicParsing="false" selected="true" text=".middle">
+                    <styleClass>
+                        <String fx:value="middle"/>
+                        <String fx:value="action-btn"/>
+                    </styleClass>
+                </ToggleButton>
+                <Button mnemonicParsing="false" text=".last">
+                    <styleClass>
+                        <String fx:value="last"/>
+
+                        <String fx:value="action-btn"/>
+                    </styleClass>
+                    <VBox.margin>
+                        <Insets top="-1.0"/>
+                    </VBox.margin>
+                </Button>
+                <MenuButton mnemonicParsing="false" prefWidth="100.0" text=".first">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Action 1"/>
+                        <MenuItem mnemonicParsing="false" text="Action 2"/>
+                    </items>
+                    <styleClass>
+                        <String fx:value="first"/>
+                        <String fx:value="info"/>
+                        <String fx:value="action-btn"/>
+                    </styleClass>
+                    <VBox.margin>
+                        <Insets bottom="-1.0" top="10.0"/>
+                    </VBox.margin>
+                </MenuButton>
+                <MenuButton mnemonicParsing="false" prefWidth="100.0" text=".middle">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Action 1"/>
+                        <MenuItem mnemonicParsing="false" text="Action 2"/>
+                    </items>
+                    <styleClass>
+                        <String fx:value="middle"/>
+
+                        <String fx:value="action-btn"/>
+                    </styleClass>
+                    <VBox.margin>
+                        <Insets bottom="-1.0"/>
+                    </VBox.margin>
+                </MenuButton>
+                <MenuButton mnemonicParsing="false" prefWidth="100.0" text=".last">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Action 1"/>
+                        <MenuItem mnemonicParsing="false" text="Action 2"/>
+                    </items>
+                    <styleClass>
+                        <String fx:value="last"/>
+                        <String fx:value="danger"/>
+                    </styleClass>
+                </MenuButton>
+            </VBox>
+            <ToolBar orientation="VERTICAL">
+                <Label text="vtoolbar"/>
+                <SplitMenuButton maxWidth="120.0" mnemonicParsing="false" text=".first">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Action 1"/>
+                        <MenuItem mnemonicParsing="false" text="Action 2"/>
+                    </items>
+                    <styleClass>
+                        <String fx:value="success"/>
+                        <String fx:value="first"/>
+                    </styleClass>
+                </SplitMenuButton>
+                <SplitMenuButton maxWidth="120.0" mnemonicParsing="false" styleClass="middle"
+                                 text=".middle">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Action 1"/>
+                        <MenuItem mnemonicParsing="false" text="Action 2"/>
+                    </items>
+                </SplitMenuButton>
+                <SplitMenuButton maxWidth="120.0" mnemonicParsing="false" text=".last">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Action 1"/>
+                        <MenuItem mnemonicParsing="false" text="Action 2"/>
+                    </items>
+                    <styleClass>
+                        <String fx:value="last"/>
+                        <String fx:value="warning"/>
+                    </styleClass>
+                </SplitMenuButton>
+                <Button mnemonicParsing="false" text=".first">
+                    <styleClass>
+                        <String fx:value="first"/>
+
+                        <String fx:value="action-btn"/>
+                    </styleClass>
+                </Button>
+                <Button mnemonicParsing="false" text=".middle">
+                    <styleClass>
+
+                        <String fx:value="middle"/>
+                        <String fx:value="action-btn"/>
+                    </styleClass>
+                </Button>
+                <Button mnemonicParsing="false" text=".last">
+                    <styleClass>
+                        <String fx:value="last"/>
+
+                        <String fx:value="action-btn"/>
+                    </styleClass>
+                </Button>
+            </ToolBar>
+            <ToolBar orientation="VERTICAL" prefHeight="216.0">
+                <Button mnemonicParsing="false" text="V-Toolbar">
+                    <styleClass>
+                        <String fx:value="btn"/>
+                        <String fx:value="warning"/>
+                    </styleClass>
+                </Button>
+                <Separator prefHeight="13.0" prefWidth="0.0"/>
+                <TextField prefWidth="50.0" promptText=".first" styleClass="first"/>
+                <TextArea prefHeight="50.0" prefWidth="50.0" promptText=".middle" styleClass="middle"/>
+                <TextField prefWidth="50.0" promptText=".last" styleClass="last"/>
+            </ToolBar>
+            <Slider orientation="VERTICAL" value="70.0"/>
+            <ToolBar prefHeight="44.0" prefWidth="300.0">
+                <TextField prefWidth="100.0"/>
+                <Separator orientation="VERTICAL" prefHeight="0.0" prefWidth="1.0"/>
+                <Button mnemonicParsing="false" text="Toolbar">
+                    <styleClass>
+                        <String fx:value="btn"/>
+                        <String fx:value="success"/>
+                    </styleClass>
+                </Button>
+            </ToolBar>
+        </HBox>
+        <HBox prefHeight="39.0" spacing="5.0">
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+            </padding>
+            <MenuButton mnemonicParsing="false" styleClass="default" text="default">
+                <items>
+                    <MenuItem mnemonicParsing="false" text="Action 1"/>
+                    <MenuItem mnemonicParsing="false" text="Action 2"/>
+                </items>
+            </MenuButton>
+            <MenuButton mnemonicParsing="false" styleClass="primary" text=".primary">
+                <items>
+                    <MenuItem mnemonicParsing="false" text="Action 1"/>
+                    <MenuItem mnemonicParsing="false" text="Action 2"/>
+                </items>
+            </MenuButton>
+            <MenuButton mnemonicParsing="false" styleClass="success" text=".success">
+                <items>
+                    <MenuItem mnemonicParsing="false" text="Action 1"/>
+                    <MenuItem mnemonicParsing="false" text="Action 2"/>
+                </items>
+            </MenuButton>
+            <MenuButton mnemonicParsing="false" text=".info.first">
+                <items>
+                    <MenuItem mnemonicParsing="false" text="Action 1"/>
+                    <MenuItem mnemonicParsing="false" text="Action 2"/>
+                </items>
+                <styleClass>
+                    <String fx:value="info"/>
+                    <String fx:value="first"/>
+                </styleClass>
+            </MenuButton>
+            <MenuButton mnemonicParsing="false" text=".warning.middle">
+                <items>
+                    <MenuItem mnemonicParsing="false" text="Action 1"/>
+                    <MenuItem mnemonicParsing="false" text="Action 2"/>
+                </items>
+                <styleClass>
+                    <String fx:value="warning"/>
+                    <String fx:value="middle"/>
+                </styleClass>
+            </MenuButton>
+            <MenuButton mnemonicParsing="false" text=".danger.last">
+                <items>
+                    <MenuItem mnemonicParsing="false" text="Action 1"/>
+                    <MenuItem mnemonicParsing="false" text="Action 2"/>
+                </items>
+                <styleClass>
+                    <String fx:value="danger"/>
+                    <String fx:value="last"/>
+                </styleClass>
+            </MenuButton>
+        </HBox>
+        <HBox prefHeight="40.0" spacing="5.0">
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+            </padding>
+            <SplitMenuButton mnemonicParsing="false" styleClass="first" text=".first">
+                <items>
+                    <MenuItem mnemonicParsing="false" text="Action 1"/>
+                    <MenuItem mnemonicParsing="false" text="Action 2"/>
+                </items>
+            </SplitMenuButton>
+            <SplitMenuButton mnemonicParsing="false" styleClass="primary" text=".primary">
+                <items>
+                    <MenuItem mnemonicParsing="false" text="Action 1"/>
+                    <MenuItem mnemonicParsing="false" text="Action 2"/>
+                </items>
+            </SplitMenuButton>
+            <SplitMenuButton mnemonicParsing="false" text=".success.middle">
+                <items>
+                    <MenuItem mnemonicParsing="false" text="Action 1"/>
+                    <MenuItem mnemonicParsing="false" text="Action 2"/>
+                </items>
+                <styleClass>
+                    <String fx:value="success"/>
+                    <String fx:value="middle"/>
+                </styleClass>
+            </SplitMenuButton>
+            <SplitMenuButton mnemonicParsing="false" text=".info">
+                <items>
+                    <MenuItem mnemonicParsing="false" text="Action 1"/>
+                    <MenuItem mnemonicParsing="false" text="Action 2"/>
+                </items>
+                <styleClass>
+                    <String fx:value="info"/>
+                    <String fx:value="action-btn"/>
+                </styleClass>
+            </SplitMenuButton>
+            <SplitMenuButton mnemonicParsing="false" text=".warning.last">
+                <items>
+                    <MenuItem mnemonicParsing="false" text="Action 1"/>
+                    <MenuItem mnemonicParsing="false" text="Action 2"/>
+                </items>
+                <styleClass>
+                    <String fx:value="warning"/>
+                    <String fx:value="last"/>
+                </styleClass>
+            </SplitMenuButton>
+            <SplitMenuButton mnemonicParsing="false" text=".danger">
+                <items>
+                    <MenuItem mnemonicParsing="false" text="Action 1"/>
+                    <MenuItem mnemonicParsing="false" text="Action 2"/>
+                </items>
+                <styleClass>
+                    <String fx:value="danger"/>
+                    <String fx:value="action-btn"/>
+                </styleClass>
+            </SplitMenuButton>
+        </HBox>
+        <HBox prefHeight="39.0" spacing="5.0">
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+            </padding>
+            <Button mnemonicParsing="false" text=".lg">
+                <styleClass>
+
+                    <String fx:value="lg"/>
+                </styleClass>
+            </Button>
+            <Button mnemonicParsing="false" text=".sm">
+                <styleClass>
+                    <String fx:value="info"/>
+                    <String fx:value="sm"/>
+                </styleClass>
+            </Button>
+            <Button mnemonicParsing="false" text=".xs">
+                <styleClass>
+                    <String fx:value="warning"/>
+                    <String fx:value="xs"/>
+                </styleClass>
+            </Button>
+            <MenuButton mnemonicParsing="false" styleClass="lg" text=".lg">
+                <items>
+                    <MenuItem mnemonicParsing="false" text="Action 1"/>
+                    <MenuItem mnemonicParsing="false" text="Action 2"/>
+                </items>
+            </MenuButton>
+            <MenuButton mnemonicParsing="false" text=".sm">
+                <items>
+                    <MenuItem mnemonicParsing="false" text="Action 1"/>
+                    <MenuItem mnemonicParsing="false" text="Action 2"/>
+                </items>
+                <styleClass>
+                    <String fx:value="sm"/>
+                    <String fx:value="primary"/>
+                </styleClass>
+            </MenuButton>
+            <MenuButton mnemonicParsing="false" text=".xs">
+                <items>
+                    <MenuItem mnemonicParsing="false" text="Action 1"/>
+                    <MenuItem mnemonicParsing="false" text="Action 2"/>
+                </items>
+                <styleClass>
+                    <String fx:value="xs"/>
+                    <String fx:value="danger"/>
+                </styleClass>
+            </MenuButton>
+            <SplitMenuButton mnemonicParsing="false" styleClass="lg" text=".lg">
+                <items>
+                    <MenuItem mnemonicParsing="false" text="Action 1"/>
+                    <MenuItem mnemonicParsing="false" text="Action 2"/>
+                </items>
+            </SplitMenuButton>
+            <SplitMenuButton mnemonicParsing="false" styleClass="sm" text=".sm">
+                <items>
+                    <MenuItem mnemonicParsing="false" text="Action 1"/>
+                    <MenuItem mnemonicParsing="false" text="Action 2"/>
+                </items>
+            </SplitMenuButton>
+            <SplitMenuButton mnemonicParsing="false" styleClass="xs" text=".xs">
+                <items>
+                    <MenuItem mnemonicParsing="false" text="Action 1"/>
+                    <MenuItem mnemonicParsing="false" text="Action 2"/>
+                </items>
+            </SplitMenuButton>
+            <Button mnemonicParsing="false" styleClass="action-btn" text=".action-btn"/>
+        </HBox>
+        <HBox alignment="CENTER_LEFT">
+            <Label text="toggle button">
+                <HBox.margin>
+                    <Insets right="5.0"/>
+                </HBox.margin>
+            </Label>
+            <ToggleButton mnemonicParsing="false" selected="true" text=".first">
+                <styleClass>
+
+                    <String fx:value="first"/>
+                </styleClass>
+                <toggleGroup>
+                    <ToggleGroup fx:id="aaa"/>
+                </toggleGroup>
+            </ToggleButton>
+            <ToggleButton mnemonicParsing="false" text=".success.last" toggleGroup="$aaa">
+                <styleClass>
+                    <String fx:value="success"/>
+                    <String fx:value="last"/>
+                </styleClass>
+                <HBox.margin>
+                    <Insets left="-1.0"/>
+                </HBox.margin>
+            </ToggleButton>
+            <Label text="tooltips">
+                <HBox.margin>
+                    <Insets left="5.0" right="5.0"/>
+                </HBox.margin>
+            </Label>
+            <Button mnemonicParsing="false" styleClass="success" text=".success">
+                <tooltip>
+                    <Tooltip styleClass="success" text="success"/>
+                </tooltip>
+                <HBox.margin>
+                    <Insets left="5.0" right="5.0"/>
+                </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" styleClass="info" text=".info">
+                <tooltip>
+                    <Tooltip styleClass="info" text="info"/>
+                </tooltip>
+                <HBox.margin>
+                    <Insets right="5.0"/>
+                </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" styleClass="warning" text=".warning">
+                <tooltip>
+                    <Tooltip styleClass="warning" text="warning"/>
+                </tooltip>
+                <HBox.margin>
+                    <Insets right="5.0"/>
+                </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" styleClass="danger" text=".danger">
+                <tooltip>
+                    <Tooltip styleClass="danger" text="danger"/>
+                </tooltip>
+            </Button>
+        </HBox>
+        <HBox prefHeight="39.0">
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+            </padding>
+            <PasswordField promptText=".first" styleClass="first">
+                <HBox.margin>
+                    <Insets right="-1.0"/>
+                </HBox.margin>
+            </PasswordField>
+            <TextField promptText=".middle" styleClass="middle">
+                <HBox.margin>
+                    <Insets right="-1.0"/>
+                </HBox.margin>
+            </TextField>
+            <TextField promptText=".last" styleClass="last"/>
+            <TextField>
+                <HBox.margin>
+                    <Insets left="10.0"/>
+                </HBox.margin>
+            </TextField>
+            <Slider value="80.0"/>
+        </HBox>
+        <HBox prefHeight="79.0">
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+            </padding>
+            <TextField promptText=".first" styleClass="first">
+                <HBox.margin>
+                    <Insets right="-1.0"/>
+                </HBox.margin>
+            </TextField>
+            <Button mnemonicParsing="false" text="Search">
+                <styleClass>
+                    <String fx:value="btn"/>
+
+                    <String fx:value="last"/>
+                </styleClass>
+                <HBox.margin>
+                    <Insets/>
+                </HBox.margin>
+            </Button>
+            <TextArea prefHeight="78.0" prefWidth="201.0">
+                <HBox.margin>
+                    <Insets left="5.0"/>
+                </HBox.margin>
+            </TextArea>
+            <TextArea prefHeight="69.0" prefWidth="80.0" promptText=".first" styleClass="first">
+                <HBox.margin>
+                    <Insets left="5.0" right="-1.0"/>
+                </HBox.margin>
+            </TextArea>
+            <TextArea prefHeight="69.0" prefWidth="80.0" promptText=".middle" styleClass="middle">
+                <HBox.margin>
+                    <Insets right="-1.0"/>
+                </HBox.margin>
+            </TextArea>
+            <TextArea prefHeight="69.0" prefWidth="80.0" promptText=".last" styleClass="last"/>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" prefHeight="40.0" spacing="5.0">
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+            </padding>
+            <ComboBox editable="true" prefWidth="150.0"/>
+            <ComboBox prefWidth="150.0"/>
+            <RadioButton mnemonicParsing="false" text="a"/>
+            <RadioButton mnemonicParsing="false" selected="true" text="b"/>
+            <CheckBox mnemonicParsing="false" text="a"/>
+            <CheckBox mnemonicParsing="false" selected="true" text="b"/>
+            <ChoiceBox prefWidth="150.0"/>
+            <ColorPicker/>
+            <DatePicker/>
+        </HBox>
+        <Pagination pageCount="8" prefHeight="59.0" prefWidth="854.0"/>
+        <TableView prefHeight="125.0" prefWidth="868.0" tableMenuButtonVisible="true">
+            <columns>
+                <TableColumn prefWidth="150.0" text="Column1"/>
+                <TableColumn minWidth="0.0" prefWidth="75.0" text="Column2"/>
+                <TableColumn minWidth="0.0" prefWidth="500.0" text="Column X">
+                    <columns>
+                        <TableColumn prefWidth="200.0" text="Column X"/>
+                        <TableColumn prefWidth="200.0" text="Column X"/>
+                    </columns>
+                </TableColumn>
+            </columns>
+        </TableView>
+        <Separator prefWidth="200.0"/>
+        <MenuBar>
+            <Menu mnemonicParsing="false" text="File">
+                <MenuItem mnemonicParsing="false" text="Close"/>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Edit">
+                <MenuItem mnemonicParsing="false" text="Delete"/>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+                <MenuItem mnemonicParsing="false" text="About"/>
+            </Menu>
+        </MenuBar>
+        <HTMLEditor
+                htmlText="&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;/body&gt;&lt;/html&gt;"
+                prefHeight="200.0" prefWidth="506.0"/>
+        <HBox prefHeight="150.0" prefWidth="868.0" spacing="10.0" style="-fx-background-color: aqua;">
+            <TabPane prefHeight="100.0" prefWidth="200.0" styleClass="plain" tabClosingPolicy="ALL_TABS">
+                <Tab text="Tab 1">
+                    <AnchorPane minHeight="0.0" prefHeight="60.0">
+                        <Label layoutX="22.0" layoutY="14.0" text=".plain"/>
+                    </AnchorPane>
+                </Tab>
+                <Tab text="Tab 2">
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="72.0">
+                        <Label layoutX="123.0" layoutY="26.0" text="tab 2"/>
+                    </AnchorPane>
+                </Tab>
+            </TabPane>
+            <TabPane prefHeight="100.0" prefWidth="200.0" side="BOTTOM" styleClass="plain"
+                     tabClosingPolicy="ALL_TABS">
+                <Tab text="Tab 1">
+                    <AnchorPane minHeight="0.0" prefHeight="60.0">
+                        <Label layoutX="22.0" layoutY="14.0" text=".plain"/>
+                    </AnchorPane>
+                </Tab>
+                <Tab text="Tab 2">
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="72.0">
+                        <Label layoutX="123.0" layoutY="26.0" text="tab 2"/>
+                    </AnchorPane>
+                </Tab>
+            </TabPane>
+            <TabPane prefHeight="100.0" prefWidth="200.0" side="LEFT" styleClass="plain"
+                     tabClosingPolicy="ALL_TABS">
+                <Tab text="Tab 1">
+                    <AnchorPane minHeight="0.0" prefHeight="60.0">
+                        <Label layoutX="22.0" layoutY="14.0" text=".plain"/>
+                    </AnchorPane>
+                </Tab>
+                <Tab text="Tab 2">
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="72.0">
+                        <Label layoutX="123.0" layoutY="26.0" text="tab 2"/>
+                    </AnchorPane>
+                </Tab>
+            </TabPane>
+            <TabPane prefHeight="100.0" prefWidth="200.0" side="RIGHT" styleClass="plain"
+                     tabClosingPolicy="ALL_TABS">
+                <Tab text="Tab 1">
+                    <AnchorPane minHeight="0.0" prefHeight="60.0">
+                        <Label layoutX="22.0" layoutY="14.0" text=".plain"/>
+                    </AnchorPane>
+                </Tab>
+                <Tab text="Tab 2">
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="72.0">
+                        <Label layoutX="123.0" layoutY="26.0" text="tab 2"/>
+                    </AnchorPane>
+                </Tab>
+            </TabPane>
+        </HBox>
+        <HBox prefHeight="150.0" prefWidth="868.0" spacing="10.0" style="-fx-background-color: aqua;">
+            <TabPane prefHeight="114.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE">
+                <Tab text="Tab 1">
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                        <Label layoutX="50.0" layoutY="29.0" text="default tabpane"/>
+                    </AnchorPane>
+                </Tab>
+                <Tab text="Tab 2">
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0"
+                                prefWidth="200.0"/>
+                </Tab>
+            </TabPane>
+            <TabPane prefHeight="114.0" prefWidth="200.0" side="BOTTOM" tabClosingPolicy="UNAVAILABLE">
+                <Tab text="Tab 1">
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                        <Label layoutX="50.0" layoutY="29.0" text="default tabpane"/>
+                    </AnchorPane>
+                </Tab>
+                <Tab text="Tab 2">
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0"
+                                prefWidth="200.0"/>
+                </Tab>
+            </TabPane>
+            <TabPane prefHeight="114.0" prefWidth="200.0" side="LEFT" tabClosingPolicy="UNAVAILABLE">
+                <Tab text="Tab 1">
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                        <Label layoutX="50.0" layoutY="29.0" text="default tabpane"/>
+                    </AnchorPane>
+                </Tab>
+                <Tab text="Tab 2">
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0"
+                                prefWidth="200.0"/>
+                </Tab>
+            </TabPane>
+            <TabPane prefHeight="114.0" prefWidth="200.0" side="RIGHT" tabClosingPolicy="UNAVAILABLE">
+                <Tab text="Tab 1">
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                        <Label layoutX="50.0" layoutY="29.0" text="default tabpane"/>
+                    </AnchorPane>
+                </Tab>
+                <Tab text="Tab 2">
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0"
+                                prefWidth="200.0"/>
+                </Tab>
+            </TabPane>
+        </HBox>
+        <ProgressBar prefHeight="20.0" prefWidth="600.0" progress="0.86"/>
+        <Label text=".success"/>
+        <ProgressBar prefHeight="20.0" prefWidth="600.0" progress="0.69" styleClass="success"/>
+        <Label text=".info"/>
+        <ProgressBar prefHeight="20.0" prefWidth="600.0" progress="0.56" styleClass="info"/>
+        <Label text=".warning"/>
+        <ProgressBar prefHeight="20.0" prefWidth="600.0" progress="0.41" styleClass="warning"/>
+        <Label text=".danger"/>
+        <ProgressBar prefHeight="20.0" prefWidth="600.0" progress="0.3" styleClass="danger"/>
+        <ScrollPane prefHeight="200.0" prefWidth="319.0">
+            <AnchorPane prefHeight="2000.0" prefWidth="2000.0"/>
+        </ScrollPane>
+        <TitledPane prefHeight="100.0" text="Titled Pane">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="20.0" prefWidth="866.0"/>
+        </TitledPane>
+        <TitledPane prefHeight="100.0" styleClass="primary" text="Primay">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="20.0" prefWidth="866.0">
+                <Text layoutX="31.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                      text="panel content"/>
+            </AnchorPane>
+        </TitledPane>
+        <TitledPane prefHeight="157.0" prefWidth="868.0" styleClass="success" text="Success">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="20.0" prefWidth="866.0">
+                <TableView layoutX="53.0" layoutY="-71.0" prefHeight="58.0" prefWidth="866.0"
+                           AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                           AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                        <TableColumn prefWidth="75.0" text="C1"/>
+                        <TableColumn prefWidth="75.0" text="C2"/>
+                    </columns>
+                </TableView>
+            </AnchorPane>
+        </TitledPane>
+        <TitledPane prefHeight="100.0" styleClass="info" text="Info">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="20.0" prefWidth="866.0"/>
+        </TitledPane>
+        <TitledPane prefHeight="100.0" styleClass="warning" text="Warning">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="20.0" prefWidth="866.0"/>
+        </TitledPane>
+        <TitledPane prefHeight="100.0" styleClass="danger" text="Danger">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="20.0" prefWidth="866.0"
+                        styleClass="error"/>
+        </TitledPane>
+        <Accordion>
+            <panes>
+                <TitledPane animated="false" prefHeight="100.0" prefWidth="868.0" styleClass="primary"
+                            text="accordion 1">
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0"/>
+                </TitledPane>
+                <TitledPane animated="false" styleClass="info" text="accordion 2">
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0"/>
+                </TitledPane>
+                <TitledPane animated="false" text="accordion 3">
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0"/>
+                </TitledPane>
+            </panes>
+        </Accordion>
+    </VBox>
+</ScrollPane>

@@ -1,0 +1,18 @@
+javafx:
+  stage:
+    resizable: false
+  title: MyCoolApp
+  
+spring:
+  jmx:
+    enabled: false
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    initialize: true
+    password: bfXa4Pt2lUUScy8jakXf
+    url: jdbc:mysql://localhost:3306/javafx?useSSL=false
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true

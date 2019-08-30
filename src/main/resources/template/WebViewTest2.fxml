@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.media.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="570.0" prefWidth="1114.0" stylesheets="@../styles/Styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pdai.javafx.demo.controller.WebViewTestController">
+   <left>
+      <VBox prefHeight="570.0" prefWidth="316.0" spacing="10.0" styleClass="background" stylesheets="@../styles/Styles.css" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="120.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="120.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="120.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="120.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="120.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#15d657" height="80.0" stroke="BLACK" strokeType="INSIDE" width="140.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#15d657" height="80.0" stroke="BLACK" strokeType="INSIDE" width="140.0" GridPane.columnIndex="1" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#15d657" height="80.0" stroke="BLACK" strokeType="INSIDE" width="140.0" GridPane.rowIndex="1" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#15d657" height="80.0" stroke="BLACK" strokeType="INSIDE" width="140.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#15d657" height="80.0" stroke="BLACK" strokeType="INSIDE" width="140.0" GridPane.rowIndex="2" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#15d657" height="80.0" stroke="BLACK" strokeType="INSIDE" width="140.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#15d657" height="80.0" stroke="BLACK" strokeType="INSIDE" width="140.0" GridPane.rowIndex="3" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#15d657" height="80.0" stroke="BLACK" strokeType="INSIDE" width="140.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#15d657" height="80.0" stroke="BLACK" strokeType="INSIDE" width="140.0" GridPane.rowIndex="4" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#15d657" height="80.0" stroke="BLACK" strokeType="INSIDE" width="140.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Button fx:id="pageA1" alignment="BOTTOM_RIGHT" mnemonicParsing="false" onAction="#clickPageABtn" prefHeight="76.0" prefWidth="139.0" style="-fx-background-color: #000;" styleClass="background" text="Test Button" textFill="#fcfffa" textOverrun="CLIP" />
+               </children>
+            </GridPane>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane id="AnchorPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="571.0" prefWidth="600.0">
+		   <children>
+		      <WebView fx:id="webView" layoutX="49.0" layoutY="47.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+		      <ProgressIndicator fx:id="progressIndicator" blendMode="EXCLUSION" layoutY="249.0" prefHeight="37.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+		         <opaqueInsets>
+		            <Insets />
+		         </opaqueInsets></ProgressIndicator>
+		   </children>
+		</AnchorPane>
+   </center>
+   <top>
+      <HBox alignment="TOP_RIGHT" prefHeight="41.0" prefWidth="640.0" style="-fx-background-color: blue;">
+         <children>
+            <HBox prefHeight="40.0" prefWidth="956.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="43.0" prefWidth="192.0" text="System Tools V1.3.1" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Button fx:id="pageA" mnemonicParsing="false" onAction="#clickPageABtn" prefHeight="22.0" prefWidth="70.0" styleClass="background" text="微软必应" textFill="#fff9f9" textOverrun="CLIP">
+               <HBox.margin>
+                  <Insets bottom="10.0" right="10.0" top="10.0" />
+               </HBox.margin></Button>
+            <Button fx:id="pageB" mnemonicParsing="false" onAction="#clickPageBBtn" prefHeight="22.0" prefWidth="70.0" styleClass="background" text="百度" textFill="#fff9f9" textOverrun="CLIP">
+               <HBox.margin>
+                  <Insets bottom="10.0" right="10.0" top="10.0" />
+               </HBox.margin></Button>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>

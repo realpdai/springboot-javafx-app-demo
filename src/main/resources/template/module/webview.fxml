@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane id="AnchorPane" minHeight="-Infinity"
+	minWidth="-Infinity" prefHeight="556.0" prefWidth="834.0"
+	xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="com.pdai.javafx.app.controller.WebviewController">
+	<children>
+		<WebView fx:id="webView" layoutX="49.0" layoutY="-1.0"
+			minHeight="-Infinity" minWidth="-Infinity" prefHeight="581.0"
+			prefWidth="833.0" AnchorPane.bottomAnchor="-1.0"
+			AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="1.0"
+			AnchorPane.topAnchor="-21.0" />
+		<ProgressIndicator fx:id="progressIndicator" maxHeight="37.0"
+			blendMode="EXCLUSION" layoutY="268.0" prefHeight="37.0"
+			prefWidth="600.0" AnchorPane.leftAnchor="0.0"
+			AnchorPane.rightAnchor="0.0">
+			<opaqueInsets>
+				<Insets />
+			</opaqueInsets>
+		</ProgressIndicator>
+	</children>
+	<BorderPane.margin>
+		<Insets bottom="20.0" right="20.0" top="20.0" />
+	</BorderPane.margin>
+	<padding>
+		<Insets top="1.0" />
+	</padding>
+</StackPane>

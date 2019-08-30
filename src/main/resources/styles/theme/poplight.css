@@ -1,0 +1,71 @@
+.root
+{
+	  -elegant    : #2E2E2E;
+	  -dark-gray  : #656D78;
+		-light-gray : #E6E9ED;
+}
+
+.popover  {
+	-fx-background-color: transparent;
+}
+
+.popover > .border {
+	-fx-stroke: red;
+	-fx-stroke-width: 0.5;
+	-fx-fill: transparent;
+	-fx-effect: null;
+	-fx-stroke-type : inside;
+}
+
+.popover > .content {
+  -fx-border-color : -dark-gray;
+  -fx-border-width : 2px;
+	-fx-padding: 0;
+}
+
+.popover > .detached {
+	-fx-background-color: transparent;
+}
+
+.popover > .content > .title > .text  {
+	-fx-padding: 0 6.0 12.0 6.0;
+	-fx-text-fill: rgba(120, 120, 120, .8);
+	-fx-font-weight: bold;
+}
+
+.popover > .content .scroll-pane .viewport
+{
+    -fx-background-color : white;
+}
+
+
+.options .button:pressed,
+.options .button:focused,
+.options .button
+{
+	-fx-background-color : transparent;
+	-fx-text-fill : #656D78;
+}
+
+.options .button:hover
+{
+		-fx-background-color : #E6E9ED;
+}
+
+.options .button .text
+{
+	-fx-fill : #656D78;
+}
+
+.options .button:hover .glyph-icon,
+.options .button:pressed .glyph-icon,
+.options .button:focused .glyph-icon,
+.options .button .glyph-icon
+{
+	-fx-fill : -icon-color;
+}
+
+.list-view .list-cell:selected .alert-cell
+{
+	  -text-color : white;
+}
