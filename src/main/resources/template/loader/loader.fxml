@@ -22,7 +22,7 @@
          <children>
             <ImageView fitHeight="358.0" fitWidth="516.0" layoutX="462.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-1.0" AnchorPane.rightAnchor="-6.0" AnchorPane.topAnchor="0.0">
                <image>
-                  <Image url="@../../icons/timg.jfif" />
+                  <Image url="@../../icons/predios-e-vetores-3fee7.jpg" />
                </image>
                <effect>
                   <ColorAdjust brightness="0.05" contrast="0.06" hue="-0.02" saturation="0.31" />
@@ -53,7 +53,7 @@
             </Text>
             <Label fx:id="progressLabel" layoutX="14.0" layoutY="336.0" text="正在加载..." textFill="WHITE" AnchorPane.bottomAnchor="60.0" />
             <JFXProgressBar fx:id="progressBar" layoutX="14.0" layoutY="382.0" prefHeight="4.0" prefWidth="401.0" progress="0.0" AnchorPane.bottomAnchor="36.0" />
-            <Label layoutX="65.0" layoutY="75.0" prefHeight="114.0" prefWidth="176.0" styleClass="fix" text="网络扫描工具" textAlignment="CENTER" textFill="WHITE">
+            <Label layoutX="65.0" layoutY="75.0" prefHeight="114.0" prefWidth="176.0" styleClass="fix" text="JavaFX Demo" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font name="Berlin Sans FB" size="28.0" />
                </font>
