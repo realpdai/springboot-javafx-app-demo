@@ -95,7 +95,7 @@ TreeTable支持
 
 #### 对话框 - Popup
 
-[外链图片转存失败,源站可能有防盗链机制,建议将图片保存下来直接上传(img-iSchiaAx-1572482334806)(https://www.pdai.tech/_images/spring/springboot-javafx-app-3.png)]
+![](https://www.pdai.tech/_images/spring/springboot-javafx-app-3.png)
 
 #### Web应用嵌入 - Webview
 
@@ -103,7 +103,7 @@ TreeTable支持
 
 #### 多种主题切换 - Theme
 
-[外链图片转存失败,源站可能有防盗链机制,建议将图片保存下来直接上传(img-jtwNhvqm-1572482334807)(https://www.pdai.tech/_images/spring/springboot-javafx-app-5.png)]
+![](https://www.pdai.tech/_images/spring/springboot-javafx-app-5.png)
 
 #### 消息及配置悬浮框 - Message/Configuration...
 
