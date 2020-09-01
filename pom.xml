@@ -24,6 +24,36 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
 		</dependency>
+
+		<!-- mvn install:install-file -DgroupId=gn -DartifactId=GNAvatarView -Dversion=v1.0-rc -Dpackaging=jar -Dfile=D:\git\github\springb
+oot-javafx-app-demo\lib\GNAvatarView-1.0-rc.jar
+-->
+		<dependency>
+			<groupId>gn</groupId>
+			<artifactId>GNAvatarView</artifactId>
+			<version>v1.0-rc</version>
+		</dependency>
+		<dependency>
+			<groupId>gn</groupId>
+			<artifactId>GNButton</artifactId>
+			<version>v1.1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>gn</groupId>
+			<artifactId>GNCalendar</artifactId>
+			<version>v1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>gn</groupId>
+			<artifactId>GNCarousel</artifactId>
+			<version>v2.1.5</version>
+		</dependency>
+		<dependency>
+			<groupId>gn</groupId>
+			<artifactId>GNDecorator</artifactId>
+			<version>v2.1.2-alpha</version>
+		</dependency>
+
 		<!-- https://mvnrepository.com/artifact/io.github.typhon0/AnimateFX -->
 		<dependency>
 			<groupId>io.github.typhon0</groupId>
@@ -69,10 +99,21 @@
 
 	<build>
 		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
+<!--			<plugin>-->
+<!--				<groupId>org.springframework.boot</groupId>-->
+<!--				<artifactId>spring-boot-maven-plugin</artifactId>-->
+<!--			</plugin>-->
+
+				<plugin>
+					<groupId>com.zenjava</groupId>
+					<artifactId>javafx-maven-plugin</artifactId>
+					<version>8.8.3</version>
+					<configuration>
+						<vendor>pdai</vendor>
+						<mainClass>com.pdai.javafx.app.SpringFxAppApplication</mainClass>
+						<allPermissions>true</allPermissions>
+					</configuration>
+				</plugin>
 		</plugins>
 	</build>
 

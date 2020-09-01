@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: gn:GNCalendar:v1.0">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/gn/GNCalendar/v1.0/GNCalendar-v1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/gn/GNCalendar/v1.0/GNCalendar-v1.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/gn/GNCalendar/v1.0/GNCalendar-v1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

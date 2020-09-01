@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: gn:GNAvatarView:v1.0-rc">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/gn/GNAvatarView/v1.0-rc/GNAvatarView-v1.0-rc.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/gn/GNAvatarView/v1.0-rc/GNAvatarView-v1.0-rc-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/gn/GNAvatarView/v1.0-rc/GNAvatarView-v1.0-rc-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
